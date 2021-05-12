@@ -1,6 +1,6 @@
 {
   "name": "prettier-plugin-rational-order",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Prettier Plugin for Rational CSS Properties Styling Order",
   "license": "MIT",
   "author": "Tobias Høegh",
@@ -14,13 +14,14 @@
   },
   "main": "src/index.js",
   "scripts": {},
-  "dependencies": {},
+  "dependencies": {
+    "postcss-scss": "^3.0.5",
+    "postcss-sorting": "^6.0.0"
+  },
   "peerDependencies": {
     "prettier": ">=2.3"
   },
   "devDependencies": {
-    "postcss-scss": "^3.0.5",
-    "postcss-sorting": "^6.0.0",
     "prettier": "^2.3.0"
   },
   "keywords": [

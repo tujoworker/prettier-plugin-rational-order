@@ -1,1 +1,15 @@
-module.exports = ['composes', '@import', '@extend', '@mixin', '@at-root']
+module.exports = [
+  'content',
+  'composes',
+  '@use',
+  '@import',
+  '@forward',
+  '@mixin',
+  '@include',
+  '@function',
+  '@extend',
+  '@error',
+  '@warn',
+  '@debug',
+  '@at-root',
+]

@@ -6,6 +6,7 @@ Sorts related CSS property declarations by grouping them together.
 
 - Vanilla CSS
 - SCSS/SASS
+- Maybe other formats. But I did not test everything.
 
 ## Install
 
@@ -22,6 +23,26 @@ yarn add --dev prettier-plugin-rational-order
 That's it. Prettier should pick up this plugin only in fact that the name of this module starts with `prettier-plugin-`.
 
 If you have set your code editor to format (run prettier) on safe, it will order your styles automatically. Isn't that convenient?
+
+### Prettier config
+
+You can force prettier to use this plugin:
+
+```json
+// .prettierrc
+{
+  ...
+  "plugins": ["prettier-plugin-rational-order"]
+}
+```
+
+### Peer dependencies
+
+You may guessed it, you need [prettier](https://prettier.io) installed as well.
+
+### Mono-repo and workspaces
+
+You may install this plugin in to the root `package.json` in order to let your code editor pick up this plugin.
 
 ## What is rational styling order?
 
@@ -72,4 +93,4 @@ It will sort your styles in these groups:
 }
 ```
 
-Thanks to [stylelint-config-rational-order](https://github.com/constverum/stylelint-config-rational-order) for the inspiration.
+Thanks to [stylelint-config-rational-order](https://github.com/constverum/stylelint-config-rational-order) for inspiration.
