@@ -1,0 +1,35 @@
+.declaration-order {
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+  float: right;
+
+  /* Box Model */
+  width: 16rem;
+  height: 16rem;
+  margin: 2rem;
+  padding: 1rem;
+  color: #111;
+
+  /* Typography */
+  font: normal 1rem Helvetica, sans-serif;
+  line-height: 1.5rem;
+  text-align: left;
+
+  /* Visual */
+  background-color: #eee;
+  border: 1px solid #888;
+  border-radius: 0.25rem;
+  opacity: 1;
+
+  /* Animation */
+  transition: all 1s;
+
+  /* Misc */
+  user-select: none;
+}

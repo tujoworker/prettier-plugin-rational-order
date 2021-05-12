@@ -7,5 +7,5 @@ module.exports = {
   semi: false,
   jsxBracketSameLine: false,
   trailingComma: 'es5',
-  plugins: ['.'],
+  plugins: ['./src/index.js'],
 }

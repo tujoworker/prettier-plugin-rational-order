@@ -42,7 +42,7 @@ You may guessed it, you need [prettier](https://prettier.io) installed as well.
 
 ## What is rational styling order?
 
-It will sort your styles in these groups, including whitespaces:
+It will sort your styles in these groups:
 
 1.  Positioning
 2.  Box Model
@@ -60,29 +60,25 @@ It will sort your styles in these groups, including whitespaces:
   bottom: 0;
   left: 0;
   z-index: 10;
-
-  /* Box Model */
   display: block;
-
   float: right;
 
+  /* Box Model */
   width: 16rem;
   height: 16rem;
   margin: 2rem;
   padding: 1rem;
+  color: #111;
 
   /* Typography */
-  color: #111;
   font: normal 1rem Helvetica, sans-serif;
   line-height: 1.5rem;
-
   text-align: left;
 
   /* Visual */
   background-color: #eee;
   border: 1px solid #888;
   border-radius: 0.25rem;
-
   opacity: 1;
 
   /* Animation */
