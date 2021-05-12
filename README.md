@@ -2,6 +2,8 @@
 
 Sorts related CSS property declarations by grouping them together.
 
+If you have set your code editor to format (run prettier) on safe, it will order your styles automatically. Isn't that convenient?
+
 ## Supports
 
 - Vanilla CSS
@@ -22,17 +24,15 @@ yarn add --dev prettier-plugin-rational-order
 
 That's it. Prettier should pick up this plugin only in fact that the name of this module starts with `prettier-plugin-`.
 
-If you have set your code editor to format (run prettier) on safe, it will order your styles automatically. Isn't that convenient?
-
 ### Prettier config
 
-You can force prettier to use this plugin:
+You can define where this plugin is placed so both your code editor and your CLI knows about the placement:
 
 ```json
 // .prettierrc
 {
   ...
-  "plugins": ["prettier-plugin-rational-order"]
+  "plugins": ["../../node_modules/prettier-plugin-rational-order"]
 }
 ```
 
@@ -40,13 +40,9 @@ You can force prettier to use this plugin:
 
 You may guessed it, you need [prettier](https://prettier.io) installed as well.
 
-### Mono-repo and workspaces
-
-You may install this plugin in to the root `package.json` in order to let your code editor pick up this plugin.
-
 ## What is rational styling order?
 
-It will sort your styles in these groups:
+It will sort your styles in these groups, including whitespaces:
 
 1.  Positioning
 2.  Box Model
@@ -67,22 +63,26 @@ It will sort your styles in these groups:
 
   /* Box Model */
   display: block;
+
   float: right;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  padding: 10px;
+
+  width: 16rem;
+  height: 16rem;
+  margin: 2rem;
+  padding: 1rem;
 
   /* Typography */
-  color: #888;
-  font: normal 16px Helvetica, sans-serif;
-  line-height: 1.3;
-  text-align: center;
+  color: #111;
+  font: normal 1rem Helvetica, sans-serif;
+  line-height: 1.5rem;
+
+  text-align: left;
 
   /* Visual */
   background-color: #eee;
   border: 1px solid #888;
-  border-radius: 4px;
+  border-radius: 0.25rem;
+
   opacity: 1;
 
   /* Animation */
