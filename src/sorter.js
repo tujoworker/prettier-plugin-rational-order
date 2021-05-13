@@ -3,13 +3,13 @@ const postcssScss = require('postcss-scss')
 const sorting = require('postcss-sorting')
 const createConfig = require('./config')
 
-const config = createConfig()
+const emptyLineBefore = false
+const config = createConfig({ emptyLineBefore })
 
 module.exports = (content) => {
   const result = postcss({
     plugins: [sorting(config)],
   }).process(content, {
-    from: undefined,
     syntax: postcssScss,
   })
 

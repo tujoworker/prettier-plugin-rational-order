@@ -1,6 +1,6 @@
 {
   "name": "prettier-plugin-rational-order",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Prettier Plugin for Rational CSS Properties Styling Order",
   "license": "MIT",
   "author": "Tobias Høegh",
@@ -40,6 +40,6 @@
   },
   "volta": {
     "node": "16.1.0",
-    "yarn": "1.22.5"
+    "yarn": "1.22.10"
   }
 }
