@@ -89,4 +89,4 @@ It will sort your styles in these groups:
 }
 ```
 
-Thanks to [stylelint-config-rational-order](https://github.com/constverum/stylelint-config-rational-order) for inspiration.
+Thanks to [idiomatic-css](https://github.com/necolas/idiomatic-css#declaration-order) and [stylelint-config-rational-order](https://github.com/constverum/stylelint-config-rational-order) for inspiration.

@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   'border',
   'border-color',
   'border-style',

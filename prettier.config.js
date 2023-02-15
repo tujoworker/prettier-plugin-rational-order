@@ -7,5 +7,5 @@ module.exports = {
   semi: false,
   jsxBracketSameLine: false,
   trailingComma: 'es5',
-  plugins: ['./src/index.js'],
+  plugins: ['./dist/prettier-plugin-rational-order.cjs.js'],
 }

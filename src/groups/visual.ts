@@ -1,6 +1,6 @@
-const border = require('./border')
+import border from './border'
 
-module.exports = [
+export default [
   ...[
     'list-style',
     'list-style-position',

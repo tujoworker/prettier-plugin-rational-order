@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   'transition',
   'transition-delay',
   'transition-timing-function',
